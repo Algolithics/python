@@ -209,27 +209,27 @@ def view_spectrum(fs,t,stereo_audio ): # for testing
  	
 if __name__ == "__main__":
 
-	gamma=[{'wave':'gamma', 'base_freq':220 } 
-		, {'wave':'gamma', 'base_freq':440 }]
+	gamma=[#{'wave':'gamma', 'base_freq':220 } 
+		 {'wave':'gamma', 'base_freq':440 }]
 	
-	beta=[{'wave':'beta', 'base_freq':330 } 
-		, {'wave':'beta', 'base_freq':440 }]	
+	beta=[#{'wave':'beta', 'base_freq':330 } 
+		 {'wave':'beta', 'base_freq':440 }]	
 		
-	theta=[{'wave':'theta', 'base_freq':330 } 
-		, {'wave':'theta', 'base_freq':440 }]	
+	theta=[#{'wave':'theta', 'base_freq':330 } 
+		 {'wave':'theta', 'base_freq':440 }]	
 		
-	alpha=[ {'wave':'alpha', 'base_freq':330 } 
-		,  {'wave':'alpha', 'base_freq':440 }
+	alpha=[ #{'wave':'alpha', 'base_freq':330 } 
+		  {'wave':'alpha', 'base_freq':440 }
 		]	
 		
-	bg=[{'wave':'beta', 'base_freq':220 }
-		, {'wave':'gamma', 'base_freq':440 } 
-		]	
+	# bg=[{'wave':'beta', 'base_freq':220 }
+		# , {'wave':'gamma', 'base_freq':440 } 
+		# ]	
 		
 	seconds=600*3
 	# sample_rate=22050*2 not really needed that much for <1khz sines
 	sample_rate=22050//2 # should be more then enough, nq at 6khz...
-	gen_set( bg, sample_rate , seconds )
+	gen_set( alpha, sample_rate , seconds )
 	
 	
 	
